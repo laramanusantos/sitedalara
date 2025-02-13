@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Unidades</title>
+    <link rel="stylesheet" href="css/conversor.css">
+</head>
+<body>
+    <div class="converter">
+        <h1>Conversor de Unidades</h1>
+        
+        <div class="input-group">
+            <label for="celsius">Temperatura (°C):</label>
+            <input type="number" id="celsius" placeholder="Digite a temperatura em Celsius">
+            <button class="btn" onclick="convertCelsius()">Converter para Fahrenheit</button>
+            <p id="celsiusResult"></p>
+        </div>
+
+        <div class="input-group">
+            <label for="meters">Distância (m):</label>
+            <input type="number" id="meters" placeholder="Digite a distância em metros">
+            <button class="btn" onclick="convertMeters()">Converter para Centímetros</button>
+            <p id="metersResult"></p>
+        </div>
+
+        <div class="input-group">
+            <label for="kilograms">Peso (kg):</label>
+            <input type="number" id="kilograms" placeholder="Digite o peso em quilos">
+            <button class="btn" onclick="convertKilograms()">Converter para Libras</button>
+            <p id="kilogramsResult"></p>
+        </div>
+    </div>
+    <script src="js/conversor.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Sobre Mim</title>
+    <link rel="stylesheet" href="css/quiz.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Quiz Sobre Mim (Lara)</h1>
+        
+        <form id="quizForm">
+            <div class="question">
+                <p>1. Qual é a minha idade?</p>
+                <label><input type="radio" name="age" value="14"> 14 anos</label>
+                <label><input type="radio" name="age" value="15" required> 15 anos</label>
+                <label><input type="radio" name="age" value="16"> 16 anos</label>
+                <label><input type="radio" name="age" value="17"> 17 anos</label>
+            </div>
+
+            <div class="question">
+                <p>2. Onde eu estudo?</p>
+                <label><input type="radio" name="school" value="ifpe" required> IFPE Palmares</label>
+                <label><input type="radio" name="school" value="ufpe"> UFPE</label>
+                <label><input type="radio" name="school" value="unesp"> UNESP</label>
+                <label><input type="radio" name="school" value="ufba"> UFBA</label>
+            </div>
+
+            <div class="question">
+                <p>3. Qual é a minha religião?</p>
+                <label><input type="radio" name="religion" value="catolica" required> Católica</label>
+                <label><input type="radio" name="religion" value="evangelica"> Evangélica</label>
+                <label><input type="radio" name="religion" value="ateu"> Ateu</label>
+                <label><input type="radio" name="religion" value="espirita"> Espírita</label>
+            </div>
+
+            <div class="question">
+                <p>4. O que eu gosto de fazer?</p>
+                <label><input type="radio" name="hobby" value="viajar" required> Viajar</label>
+                <label><input type="radio" name="hobby" value="jogar"> Jogar videogame</label>
+                <label><input type="radio" name="hobby" value="ler"> Ler livros</label>
+                <label><input type="radio" name="hobby" value="cozinhar"> Cozinhar</label>
+            </div>
+
+            <button type="button" class="btn" onclick="checkAnswers()">Finalizar Quiz</button>
+        </form>
+
+        <div id="result" class="result"></div>
+    </div>
+    <script src="js/quiz.js"></script>
+</body>
+</html>
